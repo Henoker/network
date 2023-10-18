@@ -23,7 +23,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # "django.contrib.admin",
+    "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -31,7 +31,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     #Local
     "core",
-    "core.user"
+    "core.user",
+    # Third Party Apps
+    "rest_framework",
   
     
 ]
