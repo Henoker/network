@@ -30,16 +30,16 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     #Local
-    "core",
-    "core.user",
+    "accounts.apps.AccountsConfig",
     # Third Party Apps
     "rest_framework",
   
     
 ]
 
+AUTH_USER_MODEL = "accounts.CustomUser"
 
-AUTH_USER_MODEL = 'core_user.User'
+
 
 
 MIDDLEWARE = [
